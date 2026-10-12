@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ML_EDA_full_fledge: Loan Default EDA & Feature Selection Project
 
 A production-grade, end-to-end Exploratory Data Analysis (EDA), Feature Engineering, and Feature Selection project structured according to the [Cookiecutter Data Science](https://cookiecutter-data-science.drivendata.org/) (CCDS) standard.
@@ -8,53 +9,31 @@ A production-grade, end-to-end Exploratory Data Analysis (EDA), Feature Engineer
 
 ```text
 .
-├── .github
-│   └── workflows
-│       └── ci.yml             <- CI/CD pipeline (GitHub Actions for linting, testing, and pipeline execution)
-├── LICENSE                    <- Open-source MIT License
-├── Makefile                   <- Automation commands (`make venv`, `make data`, `make features`, `make train`, etc.)
-├── README.md                  <- Top-level project documentation
-├── pyproject.toml             <- Project packaging, Ruff linter, and Pytest configuration
-├── requirements.txt           <- Dependencies for reproducing the environment
-│
-├── data
-│   ├── raw                    <- Original, immutable raw dataset (data/raw/Loan_Default.csv)
-│   ├── interim                <- Intermediate data transformed during pipeline execution
-│   └── processed              <- Final canonical datasets for modeling (train_processed.csv, test_processed.csv)
-│
-├── docs                       <- Project documentation (docs/index.md)
-│
-├── models                     <- Trained and serialized model artifacts (models/baseline_rf_model.joblib)
-│
-├── notebooks                  <- Jupyter notebooks (notebooks/1.0-eda-and-feature-selection.ipynb)
-│
-├── references                 <- Data dictionaries and explanatory materials (references/data_dictionary.md)
-│
-├── reports                    <- Generated analysis reports & metrics
-│   ├── metrics.json           <- Quantitative model evaluation metrics (ROC-AUC, PR-AUC, F1, Confusion Matrix)
-│   └── figures                <- Generated graphics (roc_curve.png, pr_curve.png, confusion_matrix.png, etc.)
-│
-├── src                        <- Source code for execution in this project
-│   ├── __init__.py            <- Makes src a Python package
-│   ├── config.py              <- Centralized paths and feature drop/keep configuration
-│   ├── dataset.py             <- Data loading and dataset verification routines
-│   ├── features.py            <- Feature engineering & scikit-learn ColumnTransformer pipeline
-│   ├── train.py               <- Entry point for model training
-│   ├── predict.py             <- Entry point for batch inference
-│   ├── reports.py             <- Report & figure generation script
-│   ├── api.py                 <- Single application scoring API wrapper
-│   ├── plots.py               <- Reusable plotting routines
-│   └── modeling
-│       ├── __init__.py
-│       ├── train.py           <- Model training & serialization engine
-│       └── predict.py         <- Inference engine
-│
-└── tests                      <- Automated unit & integration test suite (Pytest)
-    ├── __init__.py
-    ├── conftest.py            <- Pytest fixtures
-    ├── test_dataset.py        <- Data loading unit tests
-    ├── test_features.py       <- Feature engineering & pipeline unit tests
-    └── test_modeling.py       <- Model prediction & probability bounds unit tests
+├── .github/workflows/       # GitHub Actions CI/CD
+├── data/
+│   ├── raw/                 # Original datasets
+│   ├── interim/             # Intermediate datasets
+│   └── processed/           # Processed modeling datasets
+├── docs/                    # Project documentation
+├── models/                  # Trained model artifacts
+├── notebooks/               # EDA and feature selection notebooks
+├── references/              # Data dictionary and references
+├── reports/                 # Metrics and evaluation figures
+├── src/                     # Source code
+│   ├── config.py
+│   ├── dataset.py
+│   ├── features.py
+│   ├── train.py
+│   ├── predict.py
+│   ├── reports.py
+│   ├── api.py
+│   └── modeling/
+├── tests/                   # Automated tests
+├── LICENSE
+├── Makefile
+├── pyproject.toml
+├── requirements.txt
+└── README.md
 ```
 
 ---
@@ -121,3 +100,6 @@ make all
    - **ROC-AUC:** **0.8847**
    - **PR-AUC:** **0.8272**
    - **Accuracy:** **87.92%**
+=======
+# ML_Full_fledge
+>>>>>>> e09dc5aae5299e7fa0c77a0d67f554f66470376d
